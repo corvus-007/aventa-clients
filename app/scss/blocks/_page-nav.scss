@@ -1,0 +1,48 @@
+.page-nav {
+  background-color: #424242;
+}
+
+.page-nav__inner {
+  @include clear-list();
+  @include container();
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-nav__item {
+  flex: 1 1 80px;
+  font-size: rem(14);
+}
+
+.page-nav__link {
+  display: block;
+  padding: 1em 0.3em;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    color: lighten($accent-color, 20%);
+  }
+}
+
+.page-nav__item--active .page-nav__link {
+  color: $accent-color;
+  cursor: default;
+}
+
+.page-nav__icon-link {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: 0.5em;
+  vertical-align: middle;
+  background-color: currentColor;
+  transition: 0.25s;
+  border-radius: 50%;
+}
+
+.page-nav__text-link {
+  display: block;
+}

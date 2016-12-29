@@ -1,0 +1,45 @@
+.table {
+  max-width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: rem(13);
+  cursor: default;
+
+  thead {
+    th {
+      white-space: nowrap;
+      border-bottom-width: 2px;
+    }
+  }
+
+  tbody {
+
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: rem(8) rem(6);
+    border-bottom: 1px solid darken($light-color, 5%);
+    transition: 0.1s;
+  }
+
+  th {
+
+  }
+
+  td {
+
+  }
+}
+
+.table--hover {
+  tbody {
+    tr:hover {
+      th,
+      td {
+      background-color: lighten($light-color, 3%);
+      }
+    }
+  }
+}
